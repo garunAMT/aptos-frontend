@@ -35,34 +35,35 @@ const Card: React.FC = () => {
 
 export {Card};
 
-const styles: Record<string, React.CSSProperties> = {
-    card: {
-        height: '40vh',
-        width: '30vh',
-        backgroundColor: '#03045e',
-        margin: '3vh',
-        paddingTop: '1vh',
-        borderRadius: '5%'
-    }, 
-    image: {
-        height: '15vh',
-        width: '25vh',
-        margin: '2.5vh',
-        borderRadius: '5%'
-    },
-    controls: {
-        height: '10vh',
-        width: '25vh',
-        margin: '2.5vh',
-        marginBottom: '0'
-    },
-    songName: {
-        color: '#ffffff',
-        fontSize: '20px',
-        fontWeight: 'bold'
-    },
-    icons: {
-        color: "#ffffff",
-        padding: '2vh'
-    }
-}
+// ------------------------------Commeneted styles--------------------------------
+// const styles: Record<string, React.CSSProperties> = {
+//     card: {
+//         height: '40vh',
+//         width: '30vh',
+//         backgroundColor: '#03045e',
+//         margin: '3vh',
+//         paddingTop: '1vh',
+//         borderRadius: '5%'
+//     }, 
+//     image: {
+//         height: '15vh',
+//         width: '25vh',
+//         margin: '2.5vh',
+//         borderRadius: '5%'
+//     },
+//     controls: {
+//         height: '10vh',
+//         width: '25vh',
+//         margin: '2.5vh',
+//         marginBottom: '0'
+//     },
+//     songName: {
+//         color: '#ffffff',
+//         fontSize: '20px',
+//         fontWeight: 'bold'
+//     },
+//     icons: {
+//         color: "#ffffff",
+//         padding: '2vh'
+//     }
+// }
