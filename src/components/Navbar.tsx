@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/Logo.png";
 
-function Navtwo() {
+const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
@@ -118,4 +118,4 @@ function Navtwo() {
   );
 }
 
-export default Navtwo;
+export {Navbar};
