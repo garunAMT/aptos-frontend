@@ -10,12 +10,13 @@ const Navbar: React.FC = () => {
           <div>
             <div className="flex items-center justify-between lg:block">
               {/* LOGO */}
-              <a href="/">
+              <a href="/" className="flex">
                 <img
                   src={logo}
                   alt="logo"
                   className="cursor-pointer text-xl w-20 py-2 px-2"
                 />
+                <h1 className="text-3xl flex items-center bg-gradient-to-r from-red-500 via-yellow-400 to-blue-500 bg-clip-text text-transparent">PeerPlay</h1>
               </a>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="lg:hidden">
