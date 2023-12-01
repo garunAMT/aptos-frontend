@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faWallet } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as outlineHeart } from "@fortawesome/free-regular-svg-icons";
+import TipModal from "../components/TipModal";
 
 const SongDetails = () => {
   const [like, setLike] = useState(false);
@@ -128,13 +129,7 @@ const SongDetails = () => {
                     />
                   )}
                 </button>
-                <button>
-                  <FontAwesomeIcon
-                    icon={faWallet}
-                    className="text-center"
-                    size="xl"
-                  />
-                </button>
+                  <TipModal />
                 <button>
                   <FontAwesomeIcon
                     icon={faHeart}
