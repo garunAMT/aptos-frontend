@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logo from "../assets/Logo.png";
+import { WalletModal } from "./WalletModal";
 
 const Navbar: React.FC = () => {
   const [navbar, setNavbar] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <div>
       <nav className="w-full bg-black">
@@ -101,13 +103,12 @@ const Navbar: React.FC = () => {
                 </li>
 
                 <li className="my-4">
-                  <a
-                    href="/technologies-developed"
+                  <button
                     className="text-xl text-white py-2 px-6 mx-1 text-center bg-indigo-500 rounded-md"
-                    onClick={() => setNavbar(!navbar)}
+                    onClick={() => setIsModalOpen(!isModalOpen)}
                   >
-                    Sign up
-                  </a>
+                    Connect 
+                  </button>
                 </li>
 
               </ul>
@@ -115,6 +116,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
+      {isModalOpen && <WalletModal onClose={() => setIsModalOpen(!isModalOpen)} />}
     </div>
   );
 }

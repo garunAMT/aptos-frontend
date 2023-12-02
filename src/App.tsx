@@ -1,18 +1,18 @@
-import './App.css';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import Footer from './components/Footer';
-import { Songs } from './components/Songs';
+import React from "react";
+import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
+import { Songs } from "./components/Songs";
+import { Footer } from "./components/Footer";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Songs />
-      <Footer />
+    <div>
+        <Navbar />
+        <Hero />
+        <Songs />
+        <Footer />
     </div>
   );
-}
+};
 
 export default App;
